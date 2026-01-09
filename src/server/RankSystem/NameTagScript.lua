@@ -26,16 +26,16 @@ local RankChangedEvent = Events:WaitForChild("RankChanged")
 
 -- Konfigurasi Ranks (sesuai dengan Unified PlayerRanks System)
 local RANK_CONFIGS = {
-	["Owner"] = {text = "Owner", color = Color3.fromRGB(255, 0, 255), teamName = "Owner"},
-	["Staff"] = {text = "Staff", color = Color3.fromRGB(85, 255, 255), teamName = "Staff"},
-	["Sultan"] = {text = "Sultan", color = Color3.fromRGB(0, 0, 255), teamName = "Sultan"},
-	["TopSpender"] = {text = "TopSpender", color = Color3.fromRGB(85, 0, 127), teamName = "TopSpender"},
-	["DJ"] = {text = "DJ", color = Color3.fromRGB(0, 132, 255), teamName = "DJ"},
-	["Influencer"] = {text = "Influencer", color = Color3.fromRGB(255, 142, 3), teamName = "Influencer"},
-	["Gueststar"] = {text = "Gueststar", color = Color3.fromRGB(138, 43, 226), teamName = "Gueststar"},
-	["VVIP"] = {text = "VVIP", color = Color3.fromRGB(255, 0, 0), teamName = "VVIP"},
-	["VIP"] = {text = "VIP", color = Color3.fromRGB(255, 170, 0), teamName = "VIP"},
-	["Guest"] = {text = "Guest", color = Color3.fromRGB(169, 169, 169), teamName = "Guest"}
+	["Owner"] = { text = "Owner", color = Color3.fromRGB(255, 0, 255), teamName = "Owner" },
+	["Staff"] = { text = "Staff", color = Color3.fromRGB(85, 255, 255), teamName = "Staff" },
+	["Sultan"] = { text = "Sultan", color = Color3.fromRGB(0, 0, 255), teamName = "Sultan" },
+	["TopSpender"] = { text = "TopSpender", color = Color3.fromRGB(85, 0, 127), teamName = "TopSpender" },
+	["DJ"] = { text = "DJ", color = Color3.fromRGB(0, 132, 255), teamName = "DJ" },
+	["Influencer"] = { text = "Influencer", color = Color3.fromRGB(255, 142, 3), teamName = "Influencer" },
+	["Gueststar"] = { text = "Gueststar", color = Color3.fromRGB(138, 43, 226), teamName = "Gueststar" },
+	["VVIP"] = { text = "VVIP", color = Color3.fromRGB(255, 0, 0), teamName = "VVIP" },
+	["VIP"] = { text = "VIP", color = Color3.fromRGB(255, 170, 0), teamName = "VIP" },
+	["Guest"] = { text = "Guest", color = Color3.fromRGB(169, 169, 169), teamName = "Guest" },
 }
 
 -- Special Users Configuration (TAMBAHAN UNTUK FebeBbyy)
@@ -43,7 +43,7 @@ local SPECIAL_USERS = {
 	["TCopaa"] = {
 		text = "Owner",
 		color = Color3.fromRGB(255, 85, 255), -- Warna merah untuk FebeBbyy
-		teamName = "Owner" -- atau team yang diinginkan
+		teamName = "Owner", -- atau team yang diinginkan
 	},
 	--["Miinn0777"] = {
 	--	text = "?FOUNDER CELIXUS?",
@@ -53,234 +53,233 @@ local SPECIAL_USERS = {
 	["K4yysie"] = {
 		text = "QUEEN",
 		color = Color3.fromRGB(255, 0, 127), -- Warna biru untuk syndcate_77
-		teamName = "Sultan" -- atau team yang diinginkan
+		teamName = "Sultan", -- atau team yang diinginkan
 	},
 	["jeonghan167"] = {
 		text = "Admin",
 		color = Color3.fromRGB(255, 170, 255), -- Warna biru untuk syndcate_77
-		teamName = "Staff" -- atau team yang diinginkan
+		teamName = "Staff", -- atau team yang diinginkan
 	},
 	["Farlenz"] = {
 		text = "BARTENDER",
 		color = Color3.fromRGB(85, 170, 255), -- Warna biru untuk syndcate_77
-		teamName = "Sultan" -- atau team yang diinginkan
+		teamName = "Sultan", -- atau team yang diinginkan
 	},
 	["choccomatchha"] = {
 		text = "KORBAN HTS",
 		color = Color3.fromRGB(0, 85, 255), -- Warna biru untuk syndcate_77
-		teamName = "Sultan" -- atau team yang diinginkan
+		teamName = "Sultan", -- atau team yang diinginkan
 	},
 	["1niYukii"] = {
 		text = "PRINCESS",
 		color = Color3.fromRGB(255, 85, 255), -- Warna biru untuk syndcate_77
-		teamName = "TopSpender" -- atau team yang diinginkan
+		teamName = "TopSpender", -- atau team yang diinginkan
 	},
 	["babycans88"] = {
 		text = "LC VALOR",
 		color = Color3.fromRGB(255, 85, 255), -- Warna biru untuk syndcate_77
-		teamName = "TopSpender" -- atau team yang diinginkan
+		teamName = "TopSpender", -- atau team yang diinginkan
 	},
 }
 
 -- UPDATED: Multi-Logo Configuration System
 local LOGO_CONFIGS = {
 	["dtgg"] = {
-		elementName = "DTGG",  -- Nama element di ReplicatedStorage > NameTag
-		enabled = true
+		elementName = "DTGG", -- Nama element di ReplicatedStorage > NameTag
+		enabled = true,
 	},
 	["cxc"] = {
-		elementName = "CXC",  -- Nama element di ReplicatedStorage > NameTag
-		enabled = true
+		elementName = "CXC", -- Nama element di ReplicatedStorage > NameTag
+		enabled = true,
 	},
 	["ssl"] = {
-		elementName = "SSL",  -- Nama element di ReplicatedStorage > NameTag
-		enabled = true
+		elementName = "SSL", -- Nama element di ReplicatedStorage > NameTag
+		enabled = true,
 	},
 	["vl"] = {
-		elementName = "VL",  -- Nama element di ReplicatedStorage > NameTag
-		enabled = true
+		elementName = "VL", -- Nama element di ReplicatedStorage > NameTag
+		enabled = true,
 	},
 	["1tr"] = {
-		elementName = "1TR",  -- Nama element di ReplicatedStorage > NameTag
-		enabled = true
+		elementName = "1TR", -- Nama element di ReplicatedStorage > NameTag
+		enabled = true,
 	},
 	["mid"] = {
-		elementName = "MID",  -- Nama element di ReplicatedStorage > NameTag
-		enabled = true
+		elementName = "MID", -- Nama element di ReplicatedStorage > NameTag
+		enabled = true,
 	},
 	["sf"] = {
-		elementName = "SF",  -- Nama element di ReplicatedStorage > NameTag
-		enabled = true
+		elementName = "SF", -- Nama element di ReplicatedStorage > NameTag
+		enabled = true,
 	},
 	["puff"] = {
-		elementName = "PUFF",  -- Nama element di ReplicatedStorage > NameTag
-		enabled = true
+		elementName = "PUFF", -- Nama element di ReplicatedStorage > NameTag
+		enabled = true,
 	},
 	["if"] = {
-		elementName = "IF",  -- Nama element di ReplicatedStorage > NameTag
-		enabled = true
+		elementName = "IF", -- Nama element di ReplicatedStorage > NameTag
+		enabled = true,
 	},
 	["inc"] = {
-		elementName = "INC",  -- Nama element di ReplicatedStorage > NameTag
-		enabled = true
+		elementName = "INC", -- Nama element di ReplicatedStorage > NameTag
+		enabled = true,
 	},
 	["sst"] = {
-		elementName = "SST",  -- Nama element di ReplicatedStorage > NameTag
-		enabled = true
+		elementName = "SST", -- Nama element di ReplicatedStorage > NameTag
+		enabled = true,
 	},
 	["td"] = {
-		elementName = "TD",  -- Nama element di ReplicatedStorage > NameTag
-		enabled = true
+		elementName = "TD", -- Nama element di ReplicatedStorage > NameTag
+		enabled = true,
 	},
 	["69"] = {
-		elementName = "69",  -- Nama element di ReplicatedStorage > NameTag
-		enabled = true
+		elementName = "69", -- Nama element di ReplicatedStorage > NameTag
+		enabled = true,
 	},
 	["bh"] = {
-		elementName = "BH",  -- Nama element di ReplicatedStorage > NameTag
-		enabled = true
+		elementName = "BH", -- Nama element di ReplicatedStorage > NameTag
+		enabled = true,
 	},
 	["jse"] = {
-		elementName = "JSE",  -- Nama element di ReplicatedStorage > NameTag
-		enabled = true
+		elementName = "JSE", -- Nama element di ReplicatedStorage > NameTag
+		enabled = true,
 	},
 	["kf"] = {
-		elementName = "KF",  -- Nama element di ReplicatedStorage > NameTag
-		enabled = true
+		elementName = "KF", -- Nama element di ReplicatedStorage > NameTag
+		enabled = true,
 	},
 	["rbp"] = {
-		elementName = "RBP",  -- Nama element di ReplicatedStorage > NameTag
-		enabled = true
+		elementName = "RBP", -- Nama element di ReplicatedStorage > NameTag
+		enabled = true,
 	},
 	["str"] = {
-		elementName = "STR",  -- Nama element di ReplicatedStorage > NameTag
-		enabled = true
+		elementName = "STR", -- Nama element di ReplicatedStorage > NameTag
+		enabled = true,
 	},
 	["sick"] = {
-		elementName = "SICK",  -- Nama element di ReplicatedStorage > NameTag
-		enabled = true
+		elementName = "SICK", -- Nama element di ReplicatedStorage > NameTag
+		enabled = true,
 	},
 	["n1"] = {
-		elementName = "N1",  -- Nama element di ReplicatedStorage > NameTag
-		enabled = true
+		elementName = "N1", -- Nama element di ReplicatedStorage > NameTag
+		enabled = true,
 	},
 	["otg"] = {
-		elementName = "OTG",  -- Nama element di ReplicatedStorage > NameTag
-		enabled = true
+		elementName = "OTG", -- Nama element di ReplicatedStorage > NameTag
+		enabled = true,
 	},
 	["ogk"] = {
-		elementName = "OGK",  -- Nama element di ReplicatedStorage > NameTag
-		enabled = true
+		elementName = "OGK", -- Nama element di ReplicatedStorage > NameTag
+		enabled = true,
 	},
 	["trl"] = {
-		elementName = "TRL",  -- Nama element di ReplicatedStorage > NameTag
-		enabled = true
+		elementName = "TRL", -- Nama element di ReplicatedStorage > NameTag
+		enabled = true,
 	},
 	["svg"] = {
-		elementName = "SVG",  -- Nama element di ReplicatedStorage > NameTag
-		enabled = true
+		elementName = "SVG", -- Nama element di ReplicatedStorage > NameTag
+		enabled = true,
 	},
 	["mmr"] = {
-		elementName = "MMR",  -- Nama element di ReplicatedStorage > NameTag
-		enabled = true
+		elementName = "MMR", -- Nama element di ReplicatedStorage > NameTag
+		enabled = true,
 	},
 	["d9"] = {
-		elementName = "D9",  -- Nama element di ReplicatedStorage > NameTag
-		enabled = true
+		elementName = "D9", -- Nama element di ReplicatedStorage > NameTag
+		enabled = true,
 	},
 	["shdf"] = {
-		elementName = "SHDF",  -- Nama element di ReplicatedStorage > NameTag
-		enabled = true
+		elementName = "SHDF", -- Nama element di ReplicatedStorage > NameTag
+		enabled = true,
 	},
 	["agn"] = {
-		elementName = "AGN",  -- Nama element di ReplicatedStorage > NameTag
-		enabled = true
+		elementName = "AGN", -- Nama element di ReplicatedStorage > NameTag
+		enabled = true,
 	},
 	["44luv"] = {
-		elementName = "44LUV",  -- Nama element di ReplicatedStorage > NameTag
-		enabled = true
+		elementName = "44LUV", -- Nama element di ReplicatedStorage > NameTag
+		enabled = true,
 	},
 	["dw"] = {
-		elementName = "DW",  -- Nama element di ReplicatedStorage > NameTag
-		enabled = true
+		elementName = "DW", -- Nama element di ReplicatedStorage > NameTag
+		enabled = true,
 	},
 	["sac"] = {
-		elementName = "SAC",  -- Nama element di ReplicatedStorage > NameTag
-		enabled = true
+		elementName = "SAC", -- Nama element di ReplicatedStorage > NameTag
+		enabled = true,
 	},
 	["sov"] = {
-		elementName = "SOV",  -- Nama element di ReplicatedStorage > NameTag
-		enabled = true
+		elementName = "SOV", -- Nama element di ReplicatedStorage > NameTag
+		enabled = true,
 	},
 	["flo"] = {
-		elementName = "FLO",  -- Nama element di ReplicatedStorage > NameTag
-		enabled = true
+		elementName = "FLO", -- Nama element di ReplicatedStorage > NameTag
+		enabled = true,
 	},
 	["vsc"] = {
-		elementName = "VSC",  -- Nama element di ReplicatedStorage > NameTag
-		enabled = true
+		elementName = "VSC", -- Nama element di ReplicatedStorage > NameTag
+		enabled = true,
 	},
 	["end"] = {
-		elementName = "END",  -- Nama element di ReplicatedStorage > NameTag
-		enabled = true
+		elementName = "END", -- Nama element di ReplicatedStorage > NameTag
+		enabled = true,
 	},
 	["pink"] = {
-		elementName = "PINK",  -- Nama element di ReplicatedStorage > NameTag
-		enabled = true
+		elementName = "PINK", -- Nama element di ReplicatedStorage > NameTag
+		enabled = true,
 	},
 	["ctf"] = {
-		elementName = "CTF",  -- Nama element di ReplicatedStorage > NameTag
-		enabled = true
+		elementName = "CTF", -- Nama element di ReplicatedStorage > NameTag
+		enabled = true,
 	},
 	["snf"] = {
-		elementName = "SNF",  -- Nama element di ReplicatedStorage > NameTag
-		enabled = true
+		elementName = "SNF", -- Nama element di ReplicatedStorage > NameTag
+		enabled = true,
 	},
 	["zh"] = {
-		elementName = "ZH",  -- Nama element di ReplicatedStorage > NameTag
-		enabled = true
+		elementName = "ZH", -- Nama element di ReplicatedStorage > NameTag
+		enabled = true,
 	},
 	["fof"] = {
-		elementName = "FOF",  -- Nama element di ReplicatedStorage > NameTag
-		enabled = true
+		elementName = "FOF", -- Nama element di ReplicatedStorage > NameTag
+		enabled = true,
 	},
 	["tsg"] = {
-		elementName = "TSG",  -- Nama element di ReplicatedStorage > NameTag
-		enabled = true
+		elementName = "TSG", -- Nama element di ReplicatedStorage > NameTag
+		enabled = true,
 	},
 	["vn"] = {
-		elementName = "VN",  -- Nama element di ReplicatedStorage > NameTag
-		enabled = true
+		elementName = "VN", -- Nama element di ReplicatedStorage > NameTag
+		enabled = true,
 	},
 	["thrash"] = {
-		elementName = "THRASH",  -- Nama element di ReplicatedStorage > NameTag
-		enabled = true
+		elementName = "THRASH", -- Nama element di ReplicatedStorage > NameTag
+		enabled = true,
 	},
 	["db"] = {
-		elementName = "DB",  -- Nama element di ReplicatedStorage > NameTag
-		enabled = true
+		elementName = "DB", -- Nama element di ReplicatedStorage > NameTag
+		enabled = true,
 	},
 	["4k"] = {
-		elementName = "4K",  -- Nama element di ReplicatedStorage > NameTag
-		enabled = true
+		elementName = "4K", -- Nama element di ReplicatedStorage > NameTag
+		enabled = true,
 	},
 	["805"] = {
-		elementName = "805",  -- Nama element di ReplicatedStorage > NameTag
-		enabled = true
+		elementName = "805", -- Nama element di ReplicatedStorage > NameTag
+		enabled = true,
 	},
 	["nw"] = {
-		elementName = "NW",  -- Nama element di ReplicatedStorage > NameTag
-		enabled = true
+		elementName = "NW", -- Nama element di ReplicatedStorage > NameTag
+		enabled = true,
 	},
 	["or"] = {
-		elementName = "OR",  -- Nama element di ReplicatedStorage > NameTag
-		enabled = true
+		elementName = "OR", -- Nama element di ReplicatedStorage > NameTag
+		enabled = true,
 	},
 	["lyric"] = {
-		elementName = "LYRIC",  -- Nama element di ReplicatedStorage > NameTag
-		enabled = true
+		elementName = "LYRIC", -- Nama element di ReplicatedStorage > NameTag
+		enabled = true,
 	},
-
 
 	-- Template untuk logo baru:
 	-- ["logoname"] = {
@@ -290,7 +289,7 @@ local LOGO_CONFIGS = {
 }
 
 -- Urutan teams (FIXED - tambahkan kembali Gueststar)
-local TEAM_ORDER = {"Owner", "Staff","Sultan", "TopSpender", "DJ", "Gueststar", "Influencer", "VVIP", "VIP", "Guest"}
+local TEAM_ORDER = { "Owner", "Staff", "Sultan", "TopSpender", "DJ", "Gueststar", "Influencer", "VVIP", "VIP", "Guest" }
 
 -- Table untuk menyimpan custom nametag dan logo
 local customNametags = {}
@@ -309,7 +308,7 @@ local GRADIENT_CONFIG = {
 	tweenInfo = TweenInfo.new(2.5, Enum.EasingStyle.Linear, Enum.EasingDirection.Out),
 	startPos = Vector2.new(1, 0),
 	endPos = Vector2.new(-1, 0),
-	startRotation = 180
+	startRotation = 180,
 }
 
 -- Utility function
@@ -334,11 +333,8 @@ local function startGradientAnimation(gradientElement)
 	local currentRotation = GRADIENT_CONFIG.startRotation
 
 	-- Create the tween
-	local offsetTween = TweenService:Create(
-		gradientElement,
-		GRADIENT_CONFIG.tweenInfo,
-		{Offset = GRADIENT_CONFIG.endPos}
-	)
+	local offsetTween =
+		TweenService:Create(gradientElement, GRADIENT_CONFIG.tweenInfo, { Offset = GRADIENT_CONFIG.endPos })
 
 	-- Store the tween reference
 	gradientAnimations[gradientElement] = offsetTween
@@ -549,7 +545,7 @@ local function updatePlayerNametag(player)
 
 	-- CLEANUP: Head AND HumanoidRootPart
 	local rootPart = player.Character:FindFirstChild("HumanoidRootPart")
-	local targets = {head, rootPart}
+	local targets = { head, rootPart }
 
 	for _, target in pairs(targets) do
 		if target then
@@ -658,20 +654,20 @@ local function updatePlayerNametag(player)
 	end
 
 	-- FORCE RESET PROPERTIES (To fix alignment and "Staff" drifting)
-	local labels = {uppertext, lowertext, rankLabel}
+	local labels = { uppertext, lowertext, rankLabel }
 	for _, label in pairs(labels) do
 		label.Size = UDim2.new(1, 0, 0.33, 0)
 		label.BackgroundTransparency = 1
 		label.TextScaled = true
 		label.Font = Enum.Font.GothamBold
 		label.TextXAlignment = Enum.TextXAlignment.Center -- Force Center
-		label.AnchorPoint = Vector2.new(0.5, 0.5) 
+		label.AnchorPoint = Vector2.new(0.5, 0.5)
 	end
 
 	-- POSITIONING (Strict)
-	lowertext.Position = UDim2.new(0.5, 0, 0.165, 0)      -- Top (Centered Anchor)
-	uppertext.Position = UDim2.new(0.5, 0, 0.5, 0)        -- Middle (Centered Anchor)
-	rankLabel.Position = UDim2.new(0.5, 0, 0.835, 0)      -- Bottom (Centered Anchor)
+	lowertext.Position = UDim2.new(0.5, 0, 0.165, 0) -- Top (Centered Anchor)
+	uppertext.Position = UDim2.new(0.5, 0, 0.5, 0) -- Middle (Centered Anchor)
+	rankLabel.Position = UDim2.new(0.5, 0, 0.835, 0) -- Bottom (Centered Anchor)
 
 	-- SIZING (Adjusted to fit 3 lines)
 	lowertext.Size = UDim2.new(1, 0, 0.33, 0)
@@ -689,11 +685,11 @@ local function updatePlayerNametag(player)
 	if customNametags[player.UserId] then
 		lowertext.Text = customNametags[player.UserId]
 		lowertext.Visible = true
-		lowertext.TextColor3 = Color3.new(1, 1, 1) -- Default white for custom name? Or keep rank color? 
-		-- Usually custom names act as titles, maybe keep them white or gold. 
-		-- Let's use a nice default or maybe the rank color? 
+		lowertext.TextColor3 = Color3.new(1, 1, 1) -- Default white for custom name? Or keep rank color?
+		-- Usually custom names act as titles, maybe keep them white or gold.
+		-- Let's use a nice default or maybe the rank color?
 		-- Plan said: "FOUNDER" (Warna Custom). Let's use rank color for consistency or maybe white?
-		-- implementation_plan said: "Warna Custom". 
+		-- implementation_plan said: "Warna Custom".
 		-- Let's stick to White for now to differentiate from Rank, or specific colors if defined.
 		-- Actually previous code used config.color for lowertext.
 		lowertext.TextColor3 = config.color -- Use rank color for custom title as well for now
@@ -797,8 +793,10 @@ local function handleLogoCommand(player, message)
 	-- Find target player
 	local targetPlayer = nil
 	for _, p in pairs(Players:GetPlayers()) do
-		if string.lower(p.Name) == string.lower(targetUsername) or 
-			string.lower(p.DisplayName) == string.lower(targetUsername) then
+		if
+			string.lower(p.Name) == string.lower(targetUsername)
+			or string.lower(p.DisplayName) == string.lower(targetUsername)
+		then
 			targetPlayer = p
 			break
 		end
@@ -862,8 +860,10 @@ local function handleCheckLogoCommand(player, message)
 	local targetPlayer = nil
 
 	for _, p in pairs(Players:GetPlayers()) do
-		if string.lower(p.Name) == string.lower(targetUsername) or 
-			string.lower(p.DisplayName) == string.lower(targetUsername) then
+		if
+			string.lower(p.Name) == string.lower(targetUsername)
+			or string.lower(p.DisplayName) == string.lower(targetUsername)
+		then
 			targetPlayer = p
 			break
 		end
@@ -918,8 +918,10 @@ local function handleNametagCommand(player, message)
 	-- Find target player
 	local targetPlayer = nil
 	for _, p in pairs(Players:GetPlayers()) do
-		if string.lower(p.Name) == string.lower(targetUsername) or 
-			string.lower(p.DisplayName) == string.lower(targetUsername) then
+		if
+			string.lower(p.Name) == string.lower(targetUsername)
+			or string.lower(p.DisplayName) == string.lower(targetUsername)
+		then
 			targetPlayer = p
 			break
 		end
@@ -1135,6 +1137,65 @@ if Events then
 		end
 	end)
 end
+-- == Admin Remote Bindings ==
+local EventsFolder = rep:FindFirstChild("Events")
+if not EventsFolder then
+	EventsFolder = Instance.new("Folder")
+	EventsFolder.Name = "Events"
+	EventsFolder.Parent = rep
+end
 
+local SetNametagEvent = EventsFolder:FindFirstChild("SetNametag")
+if not SetNametagEvent then
+	SetNametagEvent = Instance.new("RemoteEvent")
+	SetNametagEvent.Name = "SetNametag"
+	SetNametagEvent.Parent = EventsFolder
+end
+
+local IsAdminFn = rep:FindFirstChild("IsAdmin")
+if not IsAdminFn then
+	IsAdminFn = Instance.new("RemoteFunction")
+	IsAdminFn.Name = "IsAdmin"
+	IsAdminFn.Parent = rep
+end
+
+IsAdminFn.OnServerInvoke = function(player)
+	return isAdmin(player)
+end
+
+SetNametagEvent.OnServerEvent:Connect(function(sender, targetIdentifier, newNametagText)
+	if not isAdmin(sender) then
+		warn("[SetNametag] Non-admin attempted to call SetNametag: " .. sender.Name)
+		return
+	end
+
+	local targetPlayer = nil
+	if type(targetIdentifier) == "number" then
+		targetPlayer = Players:GetPlayerByUserId(targetIdentifier)
+	elseif type(targetIdentifier) == "string" then
+		local key = string.lower(targetIdentifier)
+		for _, p in pairs(Players:GetPlayers()) do
+			if string.lower(p.Name) == key or string.lower(p.DisplayName) == key then
+				targetPlayer = p
+				break
+			end
+		end
+	end
+
+	if not targetPlayer then
+		warn("[SetNametag] Target player not found: " .. tostring(targetIdentifier))
+		return
+	end
+
+	if newNametagText == nil or newNametagText == "" then
+		saveCustomNametag(targetPlayer, nil)
+		updatePlayerNametag(targetPlayer)
+		log("[SetNametag] Removed custom nametag for " .. targetPlayer.Name .. " by " .. sender.Name)
+	else
+		saveCustomNametag(targetPlayer, newNametagText)
+		updatePlayerNametag(targetPlayer)
+		log("[SetNametag] Set '" .. tostring(newNametagText) .. "' for " .. targetPlayer.Name .. " by " .. sender.Name)
+	end
+end)
 -- Start the system
 initializeNametagSystem()
